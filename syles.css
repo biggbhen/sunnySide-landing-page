@@ -18,17 +18,16 @@
     'h h h h'
     'i i j j'
     'k k k k';
-  gap: 10px;
+  /* gap: 10px; */
   grid-auto-rows: 1fr;
   grid-auto-columns: 1fr;
-  height: 90rem;
+  overflow: auto;
+  /* height: 90rem; */
 }
-/* .container > * {
-   border: 1px solid; 
-}  */
+.container > * {
+  border: 1px solid;
+}
 .boxA {
-  /* display: flex; */
-
   grid-area: a;
   background-image: url('./images/desktop/image-header.jpg');
   background-position: center;
@@ -38,27 +37,29 @@
 .boxA > nav {
   display: flex;
   justify-content: space-between;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 .boxA > nav h1 {
   margin: 10px;
 }
 .boxA > nav ul {
   padding: 10px;
-  border: 1px solid;
+  /* border: 1px solid; */
   width: 30%;
   display: flex;
   justify-content: space-between;
 }
 .boxA > div {
-  padding-top: 2rem;
+  margin-top: 2rem;
+  padding-top: 4rem;
   text-align: center;
-  border: 1px solid black;
-  height: 60%;
+  /* border: 1px solid black; */
+  height: 70%;
 }
 .boxA > div img {
-  height: 60px;
-  margin-top: 3.5rem;
+  width: 30px;
+  /* height: 50px; */
+  margin-top: 4rem;
 }
 
 .boxB {
@@ -100,6 +101,25 @@
 
 .boxH {
   grid-area: h;
+}
+.boxH > h4 {
+  /* height: 20%; */
+  padding: 8px;
+  text-align: center;
+}
+.boxH > .testimony {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 80%;
+}
+.testimony > div {
+  padding: 20px;
+  border: 1px solid green;
+  text-align: center;
+}
+.testimony > div img {
+  border-radius: 50%;
+  width: 50px;
 }
 .boxI {
   grid-area: i;
