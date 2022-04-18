@@ -40,21 +40,21 @@
   /* border: 1px solid; */
 }
 .boxA > nav h1 {
-  margin: 10px;
+  margin: 0.625rem;
 }
 .boxA > nav ul {
-  padding: 10px;
+  padding: 0.625rem;
   /* border: 1px solid; */
   width: 30%;
   display: flex;
   justify-content: space-between;
 }
 .boxA > div {
-  margin-top: 2rem;
-  padding-top: 4rem;
+  margin-top: 2%;
+  padding-top: 3%;
   text-align: center;
   /* border: 1px solid black; */
-  height: 70%;
+  height: 60%;
 }
 .boxA > div img {
   width: 30px;
@@ -151,6 +151,7 @@
 .boxK {
   grid-area: k;
   padding-top: 2rem;
+  background-color: #90d4c5;
 }
 .boxK > * {
   text-align: center;
