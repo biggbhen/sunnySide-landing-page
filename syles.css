@@ -40,14 +40,10 @@ h4 {
 .boxG p,
 .boxF p {
   color: #3b7368;
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
   /* margin-top: 0.6rem; */
 }
 
-/* .container > * {
-  border: 1px solid;
-
-  height: 220px;
-} */
 .boxA {
   grid-area: a;
   background-image: url('./images/desktop/image-header.jpg');
@@ -61,14 +57,14 @@ h4 {
 .boxA > nav {
   display: flex;
   justify-content: space-between;
-  /* height: 20%; */
-  /* border: 1px solid; */
+  padding: 0.625rem;
+  height: 20%;
 }
-.boxA > nav h1 {
-  /* margin: 0.625rem; */
+.boxA > nav a {
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
 }
+
 .boxA > nav ul {
-  /* padding: 0.625rem; */
   /* border: 1px solid; */
   width: 32%;
   display: flex;
@@ -81,13 +77,13 @@ h4 {
   border-radius: 25px;
 }
 .boxA > div {
-  /* margin-top: 6%; */
-  /* padding-top: 3%; */
+  height: 80%;
+  padding-top: 2%;
   text-align: center;
   /* border: 1px solid black; */
 }
 .boxA > div img {
-  width: 30px;
+  width: 20px;
   margin-top: 5%;
 }
 
@@ -100,14 +96,15 @@ h4 {
   color: #383f47;
   border-bottom: 3px solid yellow;
   border-radius: 4px;
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
 }
 .boxB p,
 .boxE p {
   /* margin: 2rem 0; */
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
 }
 .boxC {
   grid-area: c;
-  /*  */
   background-image: url('./images/desktop/image-transform.jpg');
   background-position: center;
   background-size: 100% 100%;
@@ -115,7 +112,6 @@ h4 {
 
 .boxD {
   grid-area: d;
-
   background-image: url('./images/desktop/image-stand-out.jpg');
   background-position: center;
   background-size: 100% 100%;
@@ -154,6 +150,9 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 80%;
+}
+.boxH p {
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
 }
 .testimony > div {
   padding: 20px;
@@ -208,5 +207,7 @@ h4 {
 }
 .boxK > div + div {
   width: 20%;
-  /* margin-top: 4rem; */
+}
+.boxK a {
+  font-size: clamp(0.7rem, 1.5vw, 0.9rem);
 }
