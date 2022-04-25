@@ -38,6 +38,10 @@ p {
   color: #9592a3;
   font-size: clamp(1rem, 2vw, 1.2rem);
 }
+h3 {
+  color: #263137;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+}
 h4 {
   color: #245c51;
 }
@@ -152,10 +156,20 @@ h4 {
   background-size: 100% 100%;
 }
 
-.boxF,
+/* .boxF,
 .boxG {
-  padding: 24% 15% 0 15%;
+  position: relative;
+} */
+.boxF h4,
+.boxG h4 {
+  margin-bottom: 1rem;
+}
+.boxF-GText {
+  /* border: 1px solid; */
+  position: relative;
   text-align: center;
+  top: 50%;
+  padding: 1.875rem 2.5rem 0 2.5rem;
 }
 .boxH {
   grid-area: h;
