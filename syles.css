@@ -6,8 +6,13 @@
   text-decoration: none;
   font-family: 'fraunces', sans-serif;
 }
+/* body {
+  background-color: #47c3f7;
+} */
 .container {
-  margin: 2rem auto;
+  /* border: 1px solid grey; */
+  box-shadow: -13px 10px 45px -7px rgba(0, 0, 0, 0.1);
+  margin: 2rem 1rem;
   display: grid;
   grid-template-areas:
     'a a a a'
@@ -16,12 +21,12 @@
     'd d e e'
     'f f g g'
     'h h h h'
+    'h h h h'
     'i i j j'
     'k k k k';
   /* gap: 10px; */
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: minmax(200px, auto);
-  /* height: 110rem; */
+  grid-auto-rows: minmax(220px, auto);
 }
 
 /*font-colors */
@@ -42,6 +47,12 @@ h4 {
   font-size: clamp(0.7rem, 1.5vw, 0.9rem);
   /* margin-top: 0.6rem; */
 }
+/* background color for boxB, boxE, boxH */
+.boxB,
+.boxE,
+.boxH {
+  background-color: #fff;
+}
 
 .boxA {
   grid-area: a;
@@ -57,13 +68,13 @@ h4 {
 }
 .boxA h2 {
   font-size: clamp(1.2rem, 2vw, 1.5rem);
-  word-spacing: 6px;
+  word-spacing: 0.375rem;
 }
 
 .boxA > nav {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px 0 20px;
+  padding: 0.625rem 1.25rem 0 1.25rem;
   height: 20%;
 }
 .boxA > nav a {
@@ -79,24 +90,28 @@ h4 {
 .roundBorder {
   color: black;
   background-color: white;
-  padding: 1px 7px;
-  border-radius: 25px;
+  padding: 0.0625rem 0.4375rem;
+  border-radius: 1.5625rem;
 }
 .boxA > div {
   height: 80%;
-  padding-top: 3%;
+  padding-top: 5%;
   text-align: center;
   /* border: 1px solid black; */
 }
 .boxA > div img {
   width: 20px;
-  margin-top: 4%;
+  margin-top: 5%;
 }
 
 .boxB {
   grid-area: b;
-  /* padding: 15%; */
 }
+.boxB,
+.boxE {
+  padding: 8% 11% 0 11%;
+}
+
 .boxB a,
 .boxE a {
   color: #383f47;
@@ -124,7 +139,6 @@ h4 {
 }
 .boxE {
   grid-area: e;
-  /* padding: 20%; */
 }
 .boxF {
   grid-area: f;
@@ -141,15 +155,16 @@ h4 {
 
 .boxF,
 .boxG {
-  /* padding: 28% 13% 0 13%; */
+  padding: 24% 15% 0 15%;
   text-align: center;
 }
 .boxH {
   grid-area: h;
 }
 .boxH > h4 {
+  /* border: 1px solid; */
   height: 20%;
-  /* padding-top: 16px; */
+  padding-top: 3rem;
   text-align: center;
 }
 .boxH > .testimony {
@@ -158,16 +173,21 @@ h4 {
   height: 80%;
 }
 .boxH p {
+  margin-bottom: 2.5rem;
   font-size: clamp(0.7rem, 1.5vw, 0.9rem);
 }
+.boxH h5 {
+  margin-bottom: 0.7rem;
+}
 .testimony > div {
-  /* padding: 20px; */
-  border: 1px solid green;
+  padding: 2.5rem 1.25rem;
+  /* border: 1px solid green; */
   text-align: center;
 }
 .testimony > div img {
   border-radius: 50%;
   width: 50px;
+  margin-bottom: 2rem;
 }
 .boxI {
   grid-area: i;
@@ -199,17 +219,20 @@ h4 {
 .boxK {
   grid-area: k;
   /* padding-top: 2rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: #90d4c5;
 }
-.boxK > * {
+.boxK * {
   text-align: center;
+  color: #3c8373;
 }
 .boxK > div {
   margin: 1rem auto;
   width: 30%;
   display: flex;
   justify-content: space-between;
-  border: 1px solid red;
 }
 .boxK > div + div {
   width: 20%;
