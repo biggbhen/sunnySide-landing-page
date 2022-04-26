@@ -190,7 +190,6 @@ span {
   /* border: 1px solid; */
   height: 30%;
   padding-top: 7rem;
-
   text-align: center;
 }
 .boxH > .testimony {
@@ -260,12 +259,12 @@ span {
 }
 .boxK > div {
   margin: 1rem auto;
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
 }
 .boxK > div + div {
-  width: 25%;
+  width: 35%;
 }
 .boxK > div + div img {
   width: 30px;
@@ -305,27 +304,58 @@ span {
     grid-auto-rows: minmax(350px, auto);
   }
   /*fonts */
-  /* h3,
-  h5 {
-    color: #192535;
-  } */
-  a {
-    font-size: clamp(0.8rem, 1.5vw, 1rem);
-  }
+
   p {
     color: #9592a3;
-    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-size: clamp(0.87rem, 2vw, 1.4rem);
   }
   h3 {
     color: #263137;
-    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    font-size: clamp(1.3rem, 2vw, 1.5rem);
   }
   h4 {
-    font-size: clamp(1.05rem, 2vw, 1.2rem);
+    font-size: clamp(0.9rem, 2vw, 1.3rem);
     color: #245c51;
   }
-  .boxG p,
-  .boxF p {
-    color: #3b7368;
+  h2 {
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+  }
+
+  .boxK a {
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+  }
+  .boxK > div {
+    margin: 1rem auto;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .boxK > div + div {
+    width: 50%;
+  }
+  .boxK > div + div img {
+    width: 25px;
+  }
+  .boxH > .testimony {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .boxH > h4 {
+    height: 5%;
+    padding-top: 1rem;
+  }
+  .boxH p {
+    margin-bottom: 1.5rem;
+  }
+  .boxH h5 {
+    color: #303135;
+    margin-bottom: 1rem;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+  }
+  .testimony > div {
+    padding: 1.5rem 1.25rem;
+  }
+  .testimony > div img {
+    margin-bottom: 1.5rem;
   }
 }
