@@ -5,10 +5,9 @@
   list-style: none;
   text-decoration: none;
   font-family: 'fraunces', sans-serif;
+  scroll-behavior: smooth;
 }
-/* body {
-  background-color: cadetblue;
-} */
+
 .container {
   box-shadow: -13px 10px 45px -7px rgba(0, 0, 0, 0.1);
   margin: 2rem 0;
@@ -71,6 +70,31 @@ span {
 .boxA * {
   color: white;
 }
+.hamburgerMenu {
+  display: none;
+  position: fixed;
+  width: 20rem;
+  height: 20rem;
+  top: 80px;
+  right: 20px;
+  padding-top: 10%;
+  background-color: #fff;
+  text-align: center;
+}
+.hamburgerMenu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+.hamburgerMenu a {
+  color: #303135;
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+}
+.hamburgerMenu .roundBorder {
+  background-color: #fbd601;
+  padding: 5px 15px;
+}
 .boxA h1 {
   font-size: clamp(1.2rem, 2vw, 1.4rem);
 }
@@ -113,9 +137,11 @@ span {
   position: relative;
 }
 .boxA > div img {
-  width: 20px;
   position: absolute;
+  width: 20px;
   top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .boxB {
@@ -165,10 +191,6 @@ span {
   background-size: 100% 100%;
 }
 
-/* .boxF,
-.boxG {
-  position: relative;
-} */
 .boxF h4,
 .boxG h4 {
   margin-bottom: 1rem;
@@ -206,7 +228,7 @@ span {
   font-size: clamp(0.9rem, 2vw, 1rem);
 }
 .testimony > div {
-  padding: 2.5rem 1.25rem;
+  padding: 2rem 1.25rem;
   /* border: 1px solid green; */
   text-align: center;
 }
@@ -306,29 +328,39 @@ span {
   /*fonts */
 
   p {
-    color: #9592a3;
-    font-size: clamp(0.87rem, 2vw, 1.4rem);
+    font-size: clamp(1.1rem, 2.2vw, 1.5rem);
   }
   h3 {
     color: #263137;
-    font-size: clamp(1.3rem, 2vw, 1.5rem);
+    font-size: clamp(1.4rem, 2.5vw, 1.6rem);
   }
   h4 {
-    font-size: clamp(0.9rem, 2vw, 1.3rem);
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
     color: #245c51;
   }
   h2 {
-    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    font-size: clamp(1.5rem, 2.5vw, 2.1rem);
   }
 
   .boxK a {
     font-size: clamp(0.9rem, 2vw, 1.2rem);
+  }
+  span {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+  }
+  .boxF h4,
+  .boxG h4 {
+    margin-bottom: 0.5rem;
   }
   .boxK > div {
     margin: 1rem auto;
     width: 65%;
     display: flex;
     justify-content: space-between;
+  }
+  .boxF p,
+  .boxG p {
+    font-size: clamp(1rem, 2.2vw, 1.5rem);
   }
   .boxK > div + div {
     width: 50%;
@@ -350,7 +382,7 @@ span {
   .boxH h5 {
     color: #303135;
     margin-bottom: 1rem;
-    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-size: clamp(1rem, 2vw, 1.2rem);
   }
   .testimony > div {
     padding: 1.5rem 1.25rem;
@@ -358,4 +390,29 @@ span {
   .testimony > div img {
     margin-bottom: 1.5rem;
   }
+  /* .hamburgerMenu {
+    display: block;
+    position: fixed;
+    width: 20rem;
+    height: 20rem;
+    top: 80px;
+    right: 20px;
+    padding-top: 10%;
+    background-color: #fff;
+    text-align: center;
+  }
+  .hamburgerMenu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+  }
+  .hamburgerMenu a {
+    color: #303135;
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  }
+  .hamburgerMenu .roundBorder {
+    background-color: #fbd601;
+    padding: 5px 15px;
+  } */
 }
