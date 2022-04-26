@@ -45,6 +45,7 @@ h3 {
   font-size: clamp(1.2rem, 2vw, 1.4rem);
 }
 h4 {
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
   color: #245c51;
 }
 .boxG p,
@@ -168,7 +169,7 @@ h4 {
 }
 .boxF-GText {
   width: 70%;
-  border: 1px solid;
+  /* border: 1px solid; */
   position: relative;
   text-align: center;
   top: 55%;
@@ -181,14 +182,15 @@ h4 {
 }
 .boxH > h4 {
   /* border: 1px solid; */
-  height: 20%;
-  padding-top: 3rem;
+  height: 30%;
+  padding-top: 7rem;
+
   text-align: center;
 }
 .boxH > .testimony {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 80%;
+  height: 70%;
 }
 .boxH p {
   margin-bottom: 2.5rem;
@@ -203,7 +205,7 @@ h4 {
 }
 .testimony > div img {
   border-radius: 50%;
-  width: 50px;
+  width: clamp(50px, 5vw, 60px);
   margin-bottom: 2rem;
 }
 .boxI {
