@@ -1,4 +1,4 @@
 const ham = document.querySelector('.harmburger')
 ham.addEventListener('click', x =>{
-document.querySelector('.hamburgerMenu')
+document.querySelector('.hamburgerMenu').style.display='block'
 })

@@ -10,7 +10,7 @@
 
 .container {
   box-shadow: -13px 10px 45px -7px rgba(0, 0, 0, 0.1);
-  margin: 2rem 0;
+  /* margin: 2rem 0; */
   display: grid;
   grid-template-areas:
     'a a a a'
@@ -290,6 +290,12 @@ span {
 }
 .boxK > div + div img {
   width: 30px;
+}
+@media (min-width: 710px) {
+  .switch {
+    display: none;
+    z-index: -200;
+  }
 }
 @media (max-width: 710px) {
   .container {

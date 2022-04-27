@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sunny side</title>
     <link rel="stylesheet" href="./syles.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./syles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap"
       rel="stylesheet"
@@ -18,17 +18,21 @@
   </head>
   <body>
     <section class="container">
-      <header class="boxA" id="top1">
+      <header class="boxA" id="sec1">
         <nav>
           <h1>sunnyside</h1>
           <ul>
-            <li><a href="top1">About</a></li>
-            <li><a href="#top4">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#" class="roundBorder">Contact</a></li>
+            <li><a href="#sec1">About</a></li>
+            <li><a href="#sec4">Services</a></li>
+            <li><a href="#sec6">Projects</a></li>
+            <li><a href="#sec7" class="roundBorder">Contact</a></li>
           </ul>
         </nav>
-        <img src="./images/icon-hamburger.svg" alt="icon-hamburger" />
+        <img
+          src="./images/icon-hamburger.svg"
+          alt="icon-hamburger"
+          class="harmburger"
+        />
         <div>
           <h2>WE ARE CREATIVES</h2>
           <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" />
@@ -62,7 +66,7 @@
         </p>
         <a href="#">LEARN MORE</a>
       </section>
-      <section class="boxF" id="top4">
+      <section class="boxF" id="sec4">
         <div class="boxF-GText">
           <h4>Graphic design</h4>
           <p>
@@ -113,7 +117,7 @@
           </div>
         </div>
       </section>
-      <section class="boxI">
+      <section class="boxI" id="sec6">
         <section class="boxI-x"></section>
         <section class="boxI-y"></section>
       </section>
@@ -121,12 +125,12 @@
         <section class="boxJ-x"></section>
         <section class="boxJ-y"></section>
       </section>
-      <footer class="boxK">
+      <footer class="boxK" id="sec7">
         <h1>sunnyside</h1>
         <div>
-          <a href="#top1">About</a>
-          <a href="#top4">Services</a>
-          <a href="#">Projects</a>
+          <a href="#sec1">About</a>
+          <a href="#sec4">Services</a>
+          <a href="#sec6">Projects</a>
         </div>
         <div>
           <a href="#"
@@ -144,5 +148,6 @@
         </div>
       </footer>
     </section>
+    <script src="./app.js"></script>
   </body>
 </html>
