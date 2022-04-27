@@ -289,14 +289,14 @@ span {
   width: 35%;
 }
 .boxK > div + div img {
-  width: 30px;
+  width: 1.875rem;
 }
-@media (min-width: 710px) {
-  .switch {
+/* @media (min-width: 710px) {
+   .switch {
     display: none;
     z-index: -200;
-  }
-}
+  
+} */
 @media (max-width: 710px) {
   .container {
     margin: 0;
@@ -304,11 +304,12 @@ span {
   .boxA > nav ul {
     display: none;
   }
-  .boxA > img {
+  .boxA > i {
+    font-size: 1.875rem;
     display: block;
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 1.25rem;
+    right: 1.25rem;
   }
 }
 @media (max-width: 680px) {
@@ -396,29 +397,4 @@ span {
   .testimony > div img {
     margin-bottom: 1.5rem;
   }
-  /* .hamburgerMenu {
-    display: block;
-    position: fixed;
-    width: 20rem;
-    height: 20rem;
-    top: 80px;
-    right: 20px;
-    padding-top: 10%;
-    background-color: #fff;
-    text-align: center;
-  }
-  .hamburgerMenu ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 80%;
-  }
-  .hamburgerMenu a {
-    color: #303135;
-    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
-  }
-  .hamburgerMenu .roundBorder {
-    background-color: #fbd601;
-    padding: 5px 15px;
-  } */
 }
