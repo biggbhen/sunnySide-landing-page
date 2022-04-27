@@ -70,6 +70,7 @@ span {
 .boxA * {
   color: white;
 }
+
 .hamburgerMenu {
   display: none;
   position: fixed;
@@ -291,6 +292,7 @@ span {
 .boxK > div + div img {
   width: 1.875rem;
 }
+
 /* @media (min-width: 710px) {
    .switch {
     display: none;

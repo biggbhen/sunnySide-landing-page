@@ -1,6 +1,8 @@
-const ham = document.querySelector('.harmburger')
-ham.addEventListener('click', x =>{
-document.querySelector('.hamburgerMenu').style.display='block'
-ham.style.width = '2.8125rem'
-ham.setAttribute('src', src="images/cancel.png")
-})
+// const ham = document.querySelector('.hamburger')
+// // console.log(ham);
+// ham.addEventListener('click', (x) =>{
+// //  ham.classList.replace("fa-bars", 'fa-xmark')
+// // document.querySelector('.hamburgerMenu').style.display='block'
+// // console.log(x.target);
+
+// })
