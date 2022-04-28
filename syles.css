@@ -128,7 +128,6 @@ span {
   transition: background-color 1s ease;
   padding: 0.0625rem 0.4375rem;
   border-radius: 1.5625rem;
-  transform: scaleY(2.2);
 }
 
 .roundBorder {
@@ -141,7 +140,6 @@ span {
   color: white;
   background-color: inherit;
   border: 1px solid white;
-  /* transform: scaleY(1.1); */
 }
 .boxA > div {
   height: 80%;
@@ -300,13 +298,7 @@ span {
   width: 1.875rem;
 }
 
-/* @media (min-width: 710px) {
-   .switch {
-    display: none;
-    z-index: -200;
-  
-} */
-@media (max-width: 710px) {
+@media (max-width: 615px) {
   .container {
     margin: 0;
   }
@@ -320,8 +312,6 @@ span {
     top: 1.25rem;
     right: 1.25rem;
   }
-}
-@media (max-width: 680px) {
   .container {
     grid-template-areas:
       'a a'
