@@ -93,7 +93,7 @@ span {
   font-size: clamp(1.15rem, 2.5vw, 1.3rem);
 }
 .hamburgerMenu .roundBorder {
-  background-color: #fbd601;
+  background-color: yellow;
   padding: 5px 15px;
 }
 .hamburger {
@@ -125,7 +125,7 @@ span {
   margin: 10px;
 }
 .boxA ul > li a {
-  transition: background-color 1s ease;
+  transition: background-color 0.3s ease;
   padding: 0.0625rem 0.4375rem;
   border-radius: 1.5625rem;
 }
@@ -299,8 +299,10 @@ span {
 }
 
 @media (max-width: 615px) {
-  .container {
-    margin: 0;
+  .boxA ul > li a:hover {
+    color: black;
+    background-color: inherit;
+    border: 1px solid #fbd601;
   }
   .boxA > nav ul {
     display: none;
@@ -313,6 +315,7 @@ span {
     right: 1.25rem;
   }
   .container {
+    margin: 0;
     grid-template-areas:
       'a a'
       'a a'
