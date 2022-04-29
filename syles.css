@@ -28,10 +28,7 @@
 }
 
 /*fonts */
-/* h3,
-h5 {
-  color: #192535;
-} */
+
 a {
   font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
@@ -76,17 +73,20 @@ span {
   display: none;
   position: fixed;
   width: 17rem;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   overflow: auto;
   top: 80px;
   right: 20px;
   background-color: #fff;
   text-align: center;
+  transition: all 1s ease-in-out;
 }
 .hamburgerMenu ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 17rem;
+  z-index: 4;
 }
 .hamburgerMenu a {
   color: #303135;
@@ -96,6 +96,10 @@ span {
   background-color: #fbd601;
   padding: 5px 15px;
 }
+.hamburger {
+  display: none;
+}
+
 .boxA h1 {
   font-size: clamp(1.2rem, 2vw, 1.4rem);
 }
@@ -114,29 +118,32 @@ span {
   padding: 1.25rem 1.25rem 0 1.25rem;
   height: 20%;
 }
-
-.boxA > nav ul {
-  /* border: 1px solid; */
-  width: 35%;
+.boxA ul {
   display: flex;
-  justify-content: space-between;
 }
-.boxA > img {
-  display: none;
+.boxA ul > li {
+  margin: 10px;
 }
+
 .roundBorder {
   color: black;
   background-color: white;
   padding: 0.0625rem 0.4375rem;
   border-radius: 1.5625rem;
+  transition: background-color 1s ease;
+}
+.roundBorder:hover {
+  transform: scaleX(1.5);
+  background-color: inherit;
+  border: 2px solid white;
 }
 .boxA > div {
   height: 80%;
   padding-top: 5%;
   text-align: center;
-  /* border: 1px solid black; */
   position: relative;
 }
+
 .boxA > div img {
   position: absolute;
   width: 20px;
@@ -198,11 +205,8 @@ span {
 }
 .boxF-GText {
   width: 70%;
-  /* border: 1px solid; */
-  position: relative;
+  margin: 12rem auto 0 auto;
   text-align: center;
-  top: 55%;
-  left: 50%;
 }
 .boxH {
   grid-area: h;
@@ -228,7 +232,6 @@ span {
 }
 .testimony > div {
   padding: 2rem 1.25rem;
-  /* border: 1px solid green; */
   text-align: center;
 }
 .testimony > div img {
