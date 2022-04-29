@@ -79,7 +79,7 @@ span {
   right: 20px;
   background-color: #fff;
   text-align: center;
-  transition: all 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .hamburgerMenu ul {
   display: flex;
@@ -99,7 +99,9 @@ span {
 .hamburger {
   display: none;
 }
-
+.fa-xmark {
+  display: none;
+}
 .boxA h1 {
   font-size: clamp(1.2rem, 2vw, 1.4rem);
 }
