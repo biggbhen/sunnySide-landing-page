@@ -124,18 +124,24 @@ span {
 .boxA ul > li {
   margin: 10px;
 }
+.boxA ul > li a {
+  transition: background-color 1s ease;
+  padding: 0.0625rem 0.4375rem;
+  border-radius: 1.5625rem;
+  transform: scaleY(2.2);
+}
 
 .roundBorder {
   color: black;
   background-color: white;
   padding: 0.0625rem 0.4375rem;
   border-radius: 1.5625rem;
-  transition: background-color 1s ease;
 }
-.roundBorder:hover {
-  transform: scaleX(1.5);
+.boxA ul > li a:hover {
+  color: white;
   background-color: inherit;
-  border: 2px solid white;
+  border: 1px solid white;
+  /* transform: scaleY(1.1); */
 }
 .boxA > div {
   height: 80%;
