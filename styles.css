@@ -99,9 +99,7 @@ span {
 .hamburger {
   display: none;
 }
-.fa-xmark {
-  display: none;
-}
+
 .boxA h1 {
   font-size: clamp(1.2rem, 2vw, 1.4rem);
 }
@@ -300,6 +298,9 @@ span {
   width: 1.875rem;
 }
 @media (min-width: 615px) {
+  .fa-xmark {
+    display: none;
+  }
   .hamburgerMenu {
     z-index: -200;
   }
@@ -310,6 +311,9 @@ span {
     color: black;
     background-color: inherit;
     border: 1px solid #fbd601;
+  }
+  .hamburger {
+    display: block;
   }
   .boxA > nav ul {
     display: none;
