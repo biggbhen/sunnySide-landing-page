@@ -298,9 +298,6 @@ span {
   width: 1.875rem;
 }
 @media (min-width: 615px) {
-  .fa-xmark {
-    display: none;
-  }
   .hamburgerMenu {
     z-index: -200;
   }
