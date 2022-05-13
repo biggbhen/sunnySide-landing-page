@@ -20,6 +20,6 @@ hamButton.addEventListener('click', (x) => {
   } else {
     closeHamburger();
   }
-  console.log(hamburgerMenu);
+  // console.log(hamburgerMenu);
   x.preventDefault();
 });
