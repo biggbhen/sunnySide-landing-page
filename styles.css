@@ -94,12 +94,19 @@ span {
 }
 .hamburgerMenu .roundBorder {
   background-color: yellow;
-  padding: 5px 15px;
-}
-.hamburger {
-  display: none;
+  padding: 0.3125rem 0.9375rem;
 }
 
+.hamburger {
+  width: 1.25rem;
+  height: 20%;
+  display: none;
+  filter: brightness(0) invert(1);
+}
+/* .cancel {
+  width: 1.25rem;
+  height: 20%;
+}  */
 .boxA h1 {
   font-size: clamp(1.2rem, 2vw, 1.4rem);
 }
@@ -122,7 +129,7 @@ span {
   display: flex;
 }
 .boxA ul > li {
-  margin: 10px;
+  margin: 0.625rem;
 }
 .boxA ul > li a {
   transition: background-color 0.3s ease;
@@ -150,7 +157,7 @@ span {
 
 .boxA > div img {
   position: absolute;
-  width: 20px;
+  width: 1.25rem;
   top: 35%;
   left: 50%;
   transform: translateX(-50%);
@@ -167,8 +174,8 @@ span {
 .boxB a,
 .boxE a {
   color: #383f47;
-  border-bottom: 3px solid yellow;
-  border-radius: 4px;
+  border-bottom: 0.1875rem solid yellow;
+  border-radius: 0.25rem;
 }
 .boxB p,
 .boxE p {
@@ -300,6 +307,7 @@ span {
 @media (min-width: 615px) {
   .hamburgerMenu {
     z-index: -200;
+    /* display: none; */
   }
 }
 
