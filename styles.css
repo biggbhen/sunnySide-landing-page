@@ -90,7 +90,7 @@ span {
 
 .hamburgerMenu {
   padding: 1.6rem;
-  /* display: none; */
+
   position: fixed;
   width: 17rem;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -99,12 +99,10 @@ span {
   right: 20px;
   background-color: #fff;
   text-align: center;
-  /* transform: translateY(-150%); */
+  transform: translateX(150%);
   transition: transform 0.6s ease-in;
 }
-.show-menu {
-  transform: translateY(150%);
-}
+
 .hamburgerMenu ul {
   display: flex;
   flex-direction: column;
@@ -237,7 +235,6 @@ span {
   grid-area: h;
 }
 .boxH > h4 {
-  /* border: 1px solid; */
   height: 30%;
   padding-top: 7rem;
   text-align: center;
@@ -276,7 +273,6 @@ span {
 }
 .boxI > section,
 .boxJ > section {
-  /* border: 1px solid green; */
   width: 50%;
   background-position: center;
   background-size: 100% 100%;
@@ -293,7 +289,7 @@ span {
 }
 .boxK {
   grid-area: k;
-  /* padding-top: 2rem; */
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
