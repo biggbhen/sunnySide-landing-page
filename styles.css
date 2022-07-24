@@ -9,8 +9,9 @@
 }
 
 .container {
-	box-shadow: -13px 10px 45px -7px rgba(0, 0, 0, 0.1);
-	/* margin: 2rem 0; */
+	/* max-width: 100%; */
+	/* box-shadow: -13px 10px 45px -7px rgba(0, 0, 0, 0.1); */
+
 	display: grid;
 	grid-template-areas:
 		'a a'
@@ -63,6 +64,7 @@ span {
 	background-image: url('./images/desktop/image-header.jpg');
 	background-position: center;
 	background-size: 100% 100%;
+	position: relative;
 }
 .boxA * {
 	color: white;
@@ -73,7 +75,7 @@ span {
 	background-color: inherit;
 	border: 1px solid;
 	position: fixed;
-	z-index: 100;
+	z-index: 3;
 	top: 1rem;
 	right: 1rem;
 	padding: 0.25rem;
@@ -121,11 +123,14 @@ span {
 
 .boxA h1 {
 	font-size: clamp(1.3rem, 2vw, 1.5rem);
+	cursor: pointer;
+}
+.boxA h1:hover {
+	color: #000;
 }
 .boxA h2 {
 	font-size: clamp(1.2rem, 2.5vw, 1.8rem);
 	word-spacing: 0.38rem;
-	margin-bottom: 2rem;
 }
 
 .boxA > nav {
@@ -139,9 +144,11 @@ span {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.625rem;
+	padding: 0.625rem 0;
 	/* border: 1px solid black; */
-	width: 35%;
+}
+.boxA li:not(:nth-last-of-type(1)) {
+	margin-right: 2rem;
 }
 
 .boxA a {
@@ -166,8 +173,11 @@ span {
 	color: #000;
 }
 .boxA > div {
-	margin-top: 1rem;
-	border: 1px solid black;
+	position: absolute;
+	right: 50%;
+	transform: translate(50%, -50%);
+	top: 50%;
+	/* border: 1px solid black; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -175,7 +185,8 @@ span {
 
 .boxA .arrowIcon {
 	width: 1.25rem;
-	/* border: 1px solid red; */
+	height: 6rem;
+	margin-top: 2rem;
 }
 .arrowIcon img {
 	width: 100%;
